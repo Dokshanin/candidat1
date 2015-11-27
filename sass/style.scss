@@ -1,0 +1,601 @@
+body {
+  background-color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+a {
+  outline: none;
+}
+
+header {
+  margin: 30px auto 40px;
+  // Краткое описание
+  .description-site {
+    width: 324px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: 2px solid #e9e9e9;
+    padding-bottom: 10px;
+  }
+  // Контакты
+  .contact {
+    width: 150px;
+    float: left;
+    .tel-item {
+      margin-bottom: 10px;
+      .tel-icon {
+        float: left;
+        margin-right: 5px;
+      }
+      .tel-number {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+  }
+  // Кнопка 'сделать заказ'
+  .order {
+    margin-left: 168px;
+    margin-top: 16px;
+    a {
+      background: linear-gradient(#e5c75a 50%, #dab74f 50%);
+      padding: 13px 25px;
+      border-radius: 2px;
+      border: 1px solid #bfa44b;
+      color: #5d4601;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      text-align: center;
+      font-size: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+// Формочки
+.tabic {
+  background: url('https://habrastorage.org/files/de0/0b1/7f4/de00b17f48004a67b737eb286e685e73.png') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .tabic-nav {
+    li {
+      float: left;
+      width: 50%;
+      list-style: none;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transform: perspective(4px) rotateX(.2deg);
+          transform: perspective(4px) rotateX(.2deg);
+        -webkit-transform-origin: left;
+            -ms-transform-origin: left;
+                transform-origin: left;
+      }
+      a {
+        background-color: rgba(0,0,0,.5);
+        border: none;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        display: block;
+        font-weight: 600;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+    .tabic-active {
+      background: white;
+      a {
+        background: white;
+        // border: 1px solid #cecfd5;
+        outline: 1px solid #cecfd5;
+        outline-offset: -1px;
+        // border-bottom-color: transparent;
+        color: #52707d;
+        cursor: default;
+      }
+    }
+  }
+  .tabic-stage {
+    border-top: 0;
+    clear: both;
+    padding: 24px 30px;
+    position: relative;
+    top: -1px;
+    color: white;
+    #tabic-1, #tabic-2 {
+      text-align: right;
+      .order-one, .order-two {
+        background-color: rgba(255,255,255,.7);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, .45);
+        padding: 20px;
+        width: 300px;
+        display: inline-block;
+        margin-left: 70px;
+        .o-icon { float: left; padding-top: 3px; }
+        .o-title {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 600;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: black;
+          float: left;
+          text-align: left;
+          width: 200px;
+          line-height: 15px;
+          margin-left: 10px;
+        }
+        form {
+          display: inline-block;
+          margin-top: 10px;
+          input[type=text] {
+            background: #FFF;
+            border: 1px solid #D9D9D9;
+            border-radius: 3px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11px;
+            line-height: 40px;
+            padding: 0 1pc;
+            text-transform: uppercase;
+            outline: 0;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+          }
+          input[type=submit] {
+            background: linear-gradient(#e5c75a 50%, #dab74f 50%);
+            padding: 11px 25px;
+            border-radius: 2px;
+            border: 1px solid #bfa44b;
+            color: #5d4601;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            outline: none;
+            cursor: pointer;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+          }
+        }
+      }
+    }
+  }
+}
+// Навигация
+.navigation {
+  margin-top: 20px;
+  .nav-items {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    a {
+      padding: 15px 50px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #899fa9;
+      font-size: 16px;
+      border-top: 5px solid #ccc;
+      display: table-cell;
+      &:first-child { padding: 15px 39px; }
+      &:first-child:before {
+        content: "";
+        height: 22px;
+        width: 1px;
+        background-color: #d9d9d9;
+        position: absolute;
+        top: 21px;
+        margin-left: -39px;
+      }
+      &:before {
+        content: "";
+        height: 22px;
+        width: 1px;
+        background-color: #d9d9d9;
+        position: absolute;
+        top: 21px;
+        margin-left: -50px;
+      }
+      &:last-child:after {
+        content: "";
+        height: 22px;
+        width: 1px;
+        background-color: #d9d9d9;
+        position: absolute;
+        top: 21px;
+        margin-left: 50px;
+      }
+      &:hover { color: #3c3c3b; border-top: 5px solid #899fa9; }
+    }
+  }
+}
+// Наши преимущества
+.advantages {
+  .a-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    color: #474a56;
+    &:before {
+      content: url("https://habrastorage.org/files/432/794/877/43279487719142ea895cd8b679570c35.png");
+      position: absolute;
+      left: 209px;
+      top: 16px;
+    }
+    &:after {
+      content: url("https://habrastorage.org/files/432/794/877/43279487719142ea895cd8b679570c35.png");
+      position: absolute;
+      top: 26px;
+      right: 209px;
+      -moz-transform: rotate(180deg); /* Для Firefox */
+      -ms-transform: rotate(180deg); /* Для IE */
+      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(180deg); /* Для Opera */
+      transform: rotate(180deg);
+    }
+  }
+  .a-items {
+    .a-item {
+      width: 144px;
+      float: left;
+      margin: 0 6px;
+      img { position: absolute; z-index: -999; }
+      .a-info {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 115px;
+      }
+    }
+  }
+}
+// Таблички
+.tabs {
+  margin-top: 30px;
+  background: url('https://habrastorage.org/files/e1f/0d5/a17/e1f0d5a1701c44e0b230835d70be4d4e.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  // Левая таблица
+  .left-tab {
+    width: 440px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  // Правая таблица
+  .right-tab {
+    width: 440px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 16px;
+    .tab1 {
+      table {
+        tr {
+          padding: 20px 15px;
+          td { padding: 0.8rem 1rem; }
+          td:first-child { padding: 0.8rem 1rem; text-align: left;}
+        }
+        tr:nth-child(1) {
+          td:first-child { padding: 1rem; text-align: left; }
+        }
+      }
+    }
+  }
+  // Большая таблица
+  .tab1 {
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .45);
+    .title {
+      background-color: #9cafb7;
+      padding: 10px 26px;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 700;
+      color: white;
+      text-transform: uppercase;
+    }
+    table {
+      width: 100%; /* Ширина таблицы */
+      // border-spacing: 0; /* Расстояние между ячейками */
+      border-collapse: collapse;
+      tr {
+        font-family: "Open Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 20px 15px;
+        td { border: 1px solid rgb(231,231,231); padding: 0.8rem 1rem; }
+        td:first-child { padding: 0 5px; text-align: center; }
+        &:first-child { font-weight: bold; }
+      }
+      tr:nth-child(2n) {
+        background: #f8f8f3; /* Цвет фона */
+      }
+      tr:nth-child(odd) {
+        background: rgba(255,255,255,.8); /* Цвет фона */
+      }
+      tr:nth-child(1) {
+        td { padding: 1rem; }
+        td:first-child { padding: 1rem 7px; text-align: center; }
+      }
+    }
+  }
+}
+// Как мы работаем
+// Наши преимущества
+.me-work {
+  .m-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+    color: #474a56;
+    &:before {
+      content: url("https://habrastorage.org/files/432/794/877/43279487719142ea895cd8b679570c35.png");
+      position: absolute;
+      left: 209px;
+      top: 16px;
+    }
+    &:after {
+      content: url("https://habrastorage.org/files/432/794/877/43279487719142ea895cd8b679570c35.png");
+      position: absolute;
+      top: 26px;
+      right: 209px;
+      -moz-transform: rotate(180deg); /* Для Firefox */
+      -ms-transform: rotate(180deg); /* Для IE */
+      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(180deg); /* Для Opera */
+      transform: rotate(180deg);
+    }
+  }
+  .m-items {
+    .m-item {
+      width: 144px;
+      float: left;
+      margin: 0px 32px;
+      &:first-child { margin: 0 6px; }
+      &:last-child { margin: 0 6px; }
+      img { position: absolute; z-index: -999; }
+      .m-info {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 115px;
+      }
+    }
+  }
+}
+// Контент
+.content {
+  h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+// Еще информация
+.information {
+  margin-top: 8px;
+  margin-left: 30px;
+  .i-icon {
+    float: left;
+  }
+	.i-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 33px;
+  }
+  .info-list {
+    margin-left: 33px;
+    ul {
+      li {
+        list-style-type: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        margin-bottom: 13px;
+        &:before {
+          content: url("https://habrastorage.org/files/84a/4c3/b0b/84a4c3b0b2cc4ab5afba7b04408c682d.png"); /* Добавляем в качестве маркера символ */
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+  .tags {
+    margin-left: 33px;
+    a {
+      background-color: #e1e4e5;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      color: #474a56;
+      padding: 1px 3px;
+      display: inline-block;
+      margin-bottom: 3px;
+      &:hover { background-color: #96a9b1; color: white; }
+    }
+  }
+  // Новости
+  .news {
+    border-top: 5px solid #d9d9d9;
+    padding-top: 20px;
+    .n-icon { float: left; }
+    .n-title {
+      a {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 12px;
+        color: black;
+        text-decoration: none;
+      }
+    }
+    .news-item {
+      margin-bottom: 25px;
+      display: inline-block;
+      .news-cover {
+        width: 170px;
+        height: 100px;
+        float: left;
+        img {
+          outline: 5px solid rgba(255,255,255,.7);
+          outline-offset: -5px;
+        }
+      }
+      .news-meta {
+        width: 240px;
+        margin-left: 20px;
+        float: left;
+        .news-title {
+          margin-bottom: 10px;
+          a {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+          }
+        }
+        .news-description {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+          color: black;
+        }
+      }
+    }
+  }
+}
+// Обратная связь
+.contact-form {
+  background: url('https://habrastorage.org/files/e1f/0d5/a17/e1f0d5a1701c44e0b230835d70be4d4e.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
+  .c-box {
+    background-color: rgba(255,255,255,.7);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .45);
+    padding: 20px;
+    .booked {
+      .b-icon { float: left; }
+      .b-title {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-left: 33px;
+      }
+    }
+    form {
+      margin-top: 20px;
+      input[type=text] {
+        background: #FFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 3px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        line-height: 40px;
+        padding: 0 1pc;
+        width: 241px;
+        text-transform: uppercase;
+        outline: 0;
+        box-sizing: border-box;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+      }
+      input[type=submit] {
+        background: linear-gradient(#e5c75a 50%, #dab74f 50%);
+        padding: 11px 25px;
+        border-radius: 2px;
+        border: 1px solid #bfa44b;
+        color: #5d4601;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        text-align: center;
+        font-size: 12px;
+        text-transform: uppercase;
+        outline: none;
+        cursor: pointer;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+      }
+    }
+  }
+}
+// Footer
+.footer {
+  background-color: #deddd8;
+  padding: 22px 0;
+  .copyright {
+    .c-icon {
+      float: left;
+    }
+    .c-text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 11px;
+      color: #333333;
+      margin-left: 45px;
+      padding-top: 3px;
+    }
+  }
+  .tel-item {
+    margin-right: 10px;
+    display: inline-flex;
+    margin-top: 10px;
+    .tel-icon {
+      float: left;
+      margin-right: 5px;
+    }
+    .tel-number {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+  .social {
+    margin-top: 5px;
+    float: left;
+    a { text-decoration: none; }
+  }
+  .metrica {
+    margin: 4px 16px 0;
+    float: left;
+  }
+  .multisite {
+    margin-top: 6px;
+    float: left;
+  }
+}

@@ -1,0 +1,359 @@
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+	%head
+		%meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+		%title Candidat1
+		%link{:href => "../min/styles.css", :rel => "stylesheet", :type => "text/css", :media => "all"}
+	%body{:style => 'margin: 0;'}
+		%header
+			.container12
+				.column3
+					%a{:href => '/'}
+						%img{:src => 'img/logo.png'}
+				.column5
+					.description-site
+						%p <span style="color: #ad8f36;">Купить бетон</span> в калининграде и калининградской области <span style="color: #ad8f36;">с доставкой</span>
+				.column4
+					.contact
+						.tel-item
+							.tel-icon
+								%img{:src => 'img/tel.png'}
+							.tel-number
+								8 (4012) 201 11 20
+						.tel-item
+							.tel-icon
+								%img{:src => 'img/tel.png'}
+							.tel-number
+								8 (4012) 211 20 21
+					.order
+						%a{:href => '/'} Сделать заказ
+		-# Навигация
+		.navigation
+			.container12
+				.column12
+					.nav-items
+						%a{:href => '/'} Главная
+						%a{:href => '/'} Продажа
+						%a{:href => '/'} Производство
+						%a{:href => '/'} Цены
+						%a{:href => '/'} Для клиентов
+						%a{:href => '/'} Контакты
+		-# Формочки
+		.row
+		.container12
+			.column12
+				.tabic
+					%ul.tabic-nav
+						%li
+							%a{:href => '#tabic-1'} Заказать бетон
+						%li
+							%a{:href => '#tabic-2'} Заказать бетононасос
+					.tabic-stage
+						#tabic-1
+							%span.order-one
+								%span.o-icon
+									%img{:src => 'img/calculate.png'}
+								%span.o-title
+									Оставьте онлайн-заявку и вам перезвонят
+								%form
+									%input{:type => 'text', :placeholder => 'Ваше имя:'}
+									%input{:type => 'text', :placeholder => 'Ваш телефон:'}
+									%input{:type => 'text', :placeholder => 'Ваш e-mail:'}
+									%input{:type => 'submit', :placeholder => 'Отправить'}
+						#tabic-2
+							%span.order-two
+								%span.o-icon
+									%img{:src => 'img/calculate.png'}
+								%span.o-title
+									Оставьте онлайн-заявку и вам перезвонят (вариант2)
+								%form
+									%input{:type => 'text', :placeholder => 'Ваше имя:'}
+									%input{:type => 'text', :placeholder => 'Ваш телефон:'}
+									%input{:type => 'text', :placeholder => 'Ваш e-mail:'}
+									%input{:type => 'submit', :placeholder => 'Отправить'}
+		-# Наши преимущества
+		.advantages
+			.container12
+				.row
+				.column12
+					.a-title
+						Наши преимущества
+					.row
+					.a-items
+						.a-item
+							%img{:src => 'img/pic1.png'}
+							.a-info
+								Производитель-ность завода 80 м3 в час
+						.a-item
+							%img{:src => 'img/pic2.png'}
+							.a-info
+								Автобетоно-смесители до 10 м3
+						.a-item
+							%img{:src => 'img/pic3.png'}
+							.a-info
+								Автобетононасосы со стрелой от 20 до 37 метров
+						.a-item
+							%img{:src => 'img/pic4.png'}
+							.a-info
+								Лабораторные испытания всей продукции
+						.a-item
+							%img{:src => 'img/pic5.png'}
+							.a-info
+								Качество продукции соответствует ГОСТам
+						.a-item
+							%img{:src => 'img/pic6.png'}
+							.a-info
+								Лучшая цена
+		-# Таблички
+		.container12
+			.column12
+				.tabs
+					.tab1
+						.title
+							Бетон П1 В30 F200 W6 М400 З
+						%table{:border => '1'}
+							%tr
+								%td №
+								%td Марка
+								%td Характеристика
+								%td Цена, руб/м&#179;
+							%tr
+								%td 1
+								%td Марка
+								%td Характеристика
+								%td Цена, руб/м3
+							%tr
+								%td 2
+								%td Марка
+								%td Характеристика
+								%td Цена, руб/м3
+							%tr
+								%td 3
+								%td Марка
+								%td Характеристика
+								%td Цена, руб/м3
+							%tr
+								%td 4
+								%td Марка
+								%td Характеристика
+								%td Цена, руб/м3
+					.left-tab
+						.tab1
+							.title
+								Противоморозные добавки
+							%table{:border => '1'}
+								%tr
+									%td №
+									%td Марка
+									%td Характеристика
+									%td Цена, руб/м&#179;
+								%tr
+									%td 1
+									%td M100
+									%td B7,5; С3, F50, W4, П3-П4
+									%td 3000
+								%tr
+									%td 2
+									%td M150
+									%td B7,5; С3, F50, W4, П3-П4
+									%td 3000
+								%tr
+									%td 3
+									%td M150
+									%td B7,5; С3, F50, W4, П3-П4
+									%td 3000
+								%tr
+									%td 4
+									%td M150
+									%td B7,5; С3, F50, W4, П3-П4
+									%td 3000
+								%tr
+									%td 5
+									%td M150
+									%td B7,5; С3, F50, W4, П3-П4
+									%td 3000
+					.right-tab
+						.tab1
+							.title
+								Доставка бетона руб/м³
+							%table{:border => '1'}
+								%tr
+									%td Расстояние
+									%td Цена руб/М&#179;
+								%tr
+									%td до 10
+									%td 350
+								%tr
+									%td до 20
+									%td 400
+								%tr
+									%td до 30
+									%td 500
+								%tr
+									%td до 40
+									%td 600
+								%tr
+									%td до 50
+									%td 700
+		-# Как мы работаем
+		.me-work
+			.container12
+				.row
+				.column12
+					.m-title
+						Как мы работаем
+					.row
+					.m-items
+						.m-item
+							%img{:src => 'img/pic7.png'}
+							.m-info
+								Позвоните нам или отправьте заявку
+						.m-item
+							%img{:src => 'img/pic8.png'}
+							.m-info
+								Расчет стоимости
+						.m-item
+							%img{:src => 'img/pic9.png'}
+							.m-info
+								Подтверждение заказа
+						.m-item
+							%img{:src => 'img/pic10.png'}
+							.m-info
+								Доставка продукции до объекта
+						.m-item
+							%img{:src => 'img/pic11.png'}
+							.m-info
+								Оплата смеси по факту его получения
+		.row
+		.row
+		.container12
+			.column6
+				.content
+					%h1 Бетонные работы в Калиненграде и калиненградской области
+					%p
+						Лето в России короткое, а зима длинная. Конечно строители стараются сделать все основные бетонные и железобетонные работы летом, но не всегда это удаётся. Да и глупо терять зимние месяцы зря, тем более что в России их больше чем летних. Производство бетонных и железобетонных работ в условиях русской зимы вполне возможно, но требует особого подхода.Необходимость особого подхода при производстве бетонных работ зимой обуславлена тем, что свойства бетонной смеси в холодное время значительно меняются. Зимой бетон медленнее схватывается, уже при температуре один градус по Цельсию схватывание замедляется в четыре раза. При температуре ниже нуля градусов по Цельсию вода содержащаяся в бетонной смеси превращается в лёд. Согласно школьного курса физики лёд имеет объём больший нежели вода в него замёрзшая. Увеличение в объёме замерзшей воды приводит к разрушению связей между бетоном и металлической арматурой. Таким образом при замораживании бетона теряется прочность. Думаю не надо объяснять, что потеря прочности это плохо, непрочный бетон строителям просто неинтересен.
+						%br
+						%br
+						Что бы избежать потери прочности при производстве бетонных и железобетонных работ в зимнее время нужно выполнять ряд предупредительных мероприятий. В случае проведения бетонных работ при температуре окружающего воздуха около нуля градусов по Цельсию достаточно подогревать воду идущую на приготовление бетонной смеси. При более низких температурах нужно укрывать вновь уложенный бетон теплоизолирующими материалами. В качестве теплоизолирующих материалов возможно использование опилок. Особенно тщательно надо утеплять тонкие места, края и углы, которые более всего подвержены промерзанию.
+						%br
+						%br
+						В случае проведения бетонных и железобетонных работ при температуре окружающей среды ниже десяти градусов по Цельсию необходимо, кроме подогрева воды и укрытия свежеуложенного бетона, прогревать также и арматуру. Предварительный прогрев арматуры обеспечит более прочное её схватывание с бетонной смесью. Также кроме воды необходимо перед приготовлением бетонной смеси прогреть и другие составляющие: песок, щебень и гравий. Цемент не подвергают предварительному подогреву. При зимней бетоноукладке для приготовления бетонной смеси стоит применять цементы высокой активности, можно также добавлять добавки ускоряющие схватывание бетона.
+			.column6
+				.information
+					.i-icon
+						%img{:src => 'img/info.png'}
+					.i-title
+						Еще информация
+					.row
+					.info-list
+						%ul
+							%li Автобетононасос Московская область
+							%li Бетон Московская область
+							%li Бетонный завод Московская область
+							%li Фундамент Московская область
+					-# tags
+					.row
+					.tags
+						%a{:href => '/'} Бетон Балашиха
+						%a{:href => '/'} Бетон Бронницы
+						%a{:href => '/'} Бетон Видное
+						%a{:href => '/'} Бетон Власиха
+						%a{:href => '/'} Бетон Волоколамск
+						%a{:href => '/'} Бетон Воскресенск
+						%a{:href => '/'} Бетон Восход
+						%a{:href => '/'} Бетон Дзержинский
+						%a{:href => '/'} Бетон Дмитров
+						%a{:href => '/'} Бетон Долгопрудный
+						%a{:href => '/'} Бетон Домодедово
+					-# Новости
+					.row
+					.news
+						.n-icon
+							%img{:src => 'img/news.png'}
+						.n-title
+							%a{:href => '/'} Новости
+						.row
+						.news-item
+							.news-cover
+								%img{:src => 'img/img1.jpg'}
+							.news-meta
+								.news-title
+									%a{:href => '/'} Применение нано-структурированного бетона
+								.news-description
+									Современные методики воздействия на внутреннюю структуру бетонной смеси дали...
+						.news-item
+							.news-cover
+								%img{:src => 'img/img2.jpg'}
+							.news-meta
+								.news-title
+									%a{:href => '/'} Применение нано-структурированного бетона
+								.news-description
+									Современные методики воздействия на внутреннюю структуру бетонной смеси дали...
+		-# Обратная связь
+		.row
+		.container12
+			.column12
+				.contact-form
+					.c-box
+						.booked
+							.b-icon
+								%img{:src => 'img/booked.png'}
+							.b-title
+								Оставить заявку
+						%form
+							%input{:type => 'text', :placeholder => 'Ваше имя:'}
+							%input{:type => 'text', :placeholder => 'Ваш телефон:'}
+							%input{:type => 'text', :placeholder => 'Ваш e-mail:'}
+							%input{:type => 'submit', :placeholder => 'Отправить'}
+		-# Вторая менюха
+		.navigation
+			.container12
+				.column12
+					.nav-items
+						%a{:href => '/'} Главная
+						%a{:href => '/'} Продажа
+						%a{:href => '/'} Производство
+						%a{:href => '/'} Цены
+						%a{:href => '/'} Для клиентов
+						%a{:href => '/'} Контакты
+		-# Footer
+		.footer
+			.container12
+				.column3
+					.copyright
+						.c-icon
+							%img{:src => 'img/copyright.png'}
+						.c-text
+							Copyright 2015 Бетон АБЦ
+							%br
+							Все права защищены
+				.column4
+					.tel-item
+						.tel-icon
+							%img{:src => 'img/tel-mini.png'}
+						.tel-number
+							8 (4012) 211 20 21
+					.tel-item
+						.tel-icon
+							%img{:src => 'img/tel-mini.png'}
+						.tel-number
+							8 (4012) 211 20 21
+				.column5
+					.social
+						%a{:href => '/'}
+							%img{:src => 'img/vk.png'}
+						%a{:href => '/'}
+							%img{:src => 'img/twitter.png'}
+						%a{:href => '/'}
+							%img{:src => 'img/gplus.png'}
+						%a{:href => '/'}
+							%img{:src => 'img/facebook.png'}
+					.metrica
+						%a{:href => '/'}
+							%img{:src => 'img/metrica.jpg'}
+					.multisite
+						%a{:href => '/'}
+							%img{:src => 'img/multisite.png'}
+
+		%script{:type => "text/javascript", :src => "https://code.jquery.com/jquery-2.1.4.js"}
+		%script{:type => "text/javascript", :src => "../js/main.js"}
